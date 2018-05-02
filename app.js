@@ -2,9 +2,7 @@ const config    = require('./knexfile');
 const env       = 'development';
 const knex      = require('knex')(config[env]);
 
-
 const name = process.argv[2]
-
 
 // SELECT
 knex

@@ -2,9 +2,7 @@ const config    = require('./knexfile');
 const env       = 'development';
 const knex      = require('knex')(config[env]);
 
-
 const [,, first_name, last_name, date] = process.argv
-
 
 // INSERT
 knex('famous_people')
